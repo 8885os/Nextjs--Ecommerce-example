@@ -1,12 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Axios from 'axios'
-import Header from '../components/Header'
-
+import Image from 'next/image'
 
 export const getStaticProps = async () => {
-    const res = await fetch("https://fakestoreapi.com/products")
+    const res = await fetch("https://fakestoreapi.com/products/category/women's clothing")
     const data = await res.json()
     return {
         props: { items: data }
@@ -14,7 +10,7 @@ export const getStaticProps = async () => {
 
 }
 
-export default function Home({ items }) {
+const Womens = ({ items }) => {
     return (
         <>
             <div className={styles.container}>
@@ -27,5 +23,7 @@ export default function Home({ items }) {
             </div>
 
         </>
-    )
+    );
 }
+
+export default Womens;
