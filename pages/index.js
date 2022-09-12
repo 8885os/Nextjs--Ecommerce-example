@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Axios from 'axios'
 import Header from '../components/Header'
+import Item from '../components/Item'
 
 
 export const getStaticProps = async () => {
@@ -19,10 +20,7 @@ export default function Home({ items }) {
         <>
             <div className={styles.container}>
                 {items.map(item => (
-                    <div className={styles.item__container} key={item.id}>
-                        <Image className='item__image' src={item.image} width={200} height={200} layout="responsive" alt=''></Image>
-                        <h2>{item.title}</h2>
-                    </div>
+                    <Item item={item} />
                 ))}
             </div>
 

@@ -1,0 +1,102 @@
+.container__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.item__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item__image {
+    border: 1px solid black;
+    padding: 1rem;
+
+}
+
+.basket__button {
+    border: 5px solid transparent;
+    border-radius: 1rem;
+    font-family: "Nunito";
+    background-color: rgb(52, 241, 105);
+    margin-left: auto;
+    order: 2;
+    cursor: pointer;
+}
+
+.checkout__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkout__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.single {
+    padding: 2px 16px;
+    background: #fff;
+    display: flex;
+    margin: 20px 10px;
+    border-left: 8px solid #fff;
+    gap: 2rem;
+}
+
+.single:hover {
+    border-left: 8px solid #4979ff;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.item__title {
+    font-size: medium;
+}
+
+.item__price {
+    font-size: 14px;
+}
+
+.quantity__div {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 3px;
+    gap: 1rem;
+}
+
+.quantity {
+    position: relative;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+}
+
+.quantity__arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cursor__button {
+    font-size: 15px;
+    cursor: pointer;
+    border: 0px solid transparent;
+}
